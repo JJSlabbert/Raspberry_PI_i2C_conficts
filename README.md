@@ -3,7 +3,7 @@ Use multiple i2c devices with same i2c address. No extra hardware required.
 
 Just add the following lines to your config.txt file
 
-dtoverlay=i2c-gpio,bus=3,i2c_gpio_delay_us=2
+dtoverlay=i2c-gpio,bus=3,i2c_gpio_delay_us=2,i2c_gpio_sda=23,i2c_gpio_scl=24
 
 dtoverlay=i2c-gpio,bus=4,i2c_gpio_delay_us=2,i2c_gpio_sda=17,i2c_gpio_scl=27
 
@@ -16,6 +16,7 @@ Info:   Adds support for software i2c controller on gpio pins
 Load:   dtoverlay=i2c-gpio,<param>=<val>
         
 Params: 
+
         i2c_gpio_sda            GPIO used for I2C data (default "23")
 
         i2c_gpio_scl            GPIO used for I2C clock (default "24")
