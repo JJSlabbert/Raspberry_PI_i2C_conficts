@@ -4,6 +4,7 @@ Use multiple i2c devices with same i2c address. No extra hardware required.
 Just add the following lines to your config.txt file
 
 dtoverlay=i2c-gpio,bus=3,i2c_gpio_delay_us=2
+
 dtoverlay=i2c-gpio,bus=4,i2c_gpio_delay_us=2,i2c_gpio_sda=17,i2c_gpio_scl=27
 
 The description of the above to lines is found in:
