@@ -14,7 +14,9 @@ The description of the above to lines is found in:
 Name:   i2c-gpio
 Info:   Adds support for software i2c controller on gpio pins
 Load:   dtoverlay=i2c-gpio,<param>=<val>
-Params: i2c_gpio_sda            GPIO used for I2C data (default "23")
+        
+Params: 
+        i2c_gpio_sda            GPIO used for I2C data (default "23")
 
         i2c_gpio_scl            GPIO used for I2C clock (default "24")
 
