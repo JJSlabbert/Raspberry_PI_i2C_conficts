@@ -3,9 +3,12 @@ Use multiple i2c devices with same i2c address. No extra hardware required.
 
 Just add the following lines to your config.txt file
 
+dtoverlay=i2c-gpio,bus=4,i2c_gpio_delay_us=2,i2c_gpio_sda=17,i2c_gpio_scl=27
+
+
+
 dtoverlay=i2c-gpio,bus=3,i2c_gpio_delay_us=2,i2c_gpio_sda=23,i2c_gpio_scl=24
 
-dtoverlay=i2c-gpio,bus=4,i2c_gpio_delay_us=2,i2c_gpio_sda=17,i2c_gpio_scl=27
 
 The description of the above to lines is found in:
 
@@ -43,3 +46,6 @@ i2c-1	i2c       	bcm2835 I2C adapter             	I2C adapter
 i2c-4	i2c       	4.i2c                           	I2C adapter
 
 Now you need to change your applications to use those busses.
+
+Also see,
+https://www.instructables.com/id/Raspberry-PI-Multiple-I2c-Devices/
